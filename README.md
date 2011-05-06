@@ -33,16 +33,24 @@ You can also install express-csrf with npm:
         csrf: csrf.token
     });
     
-    app.use(express.session());
-    app.use(express.bodyDecoder());
+    app.use(express.bodyParser());
+    app.use(express.cookieParser());
     app.use(csrf.check());
     
     app.listen(3000);
 
 In your view:
 
+jade example:
+
     <form>
         <input type="hidden" name="csrf" value=csrf>
+    </form>
+    
+ejs example:
+
+    <form>
+        <input type="hidden" name="csrf" value="<%- csrf%>" />
     </form>
 
 ## Credits
