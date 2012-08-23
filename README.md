@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/hanssonlarsson/express-csrf.png)](http://travis-ci.org/hanssonlarsson/express-csrf)
 Express-CSRF: Cross-site request forgery protection for Express Node.js framework
 =================================================================================
 
